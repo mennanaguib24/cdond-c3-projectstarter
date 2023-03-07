@@ -93,7 +93,6 @@ jobs:
             cd frontend
             npm install
             npm run build 
- 
   test-backend:
     <<: *node_image
     steps:
@@ -104,7 +103,7 @@ jobs:
           name: Run Backend test  
           command: |
             cd backend
-            npm install
+            npm installl
             npm run build
 
   scan-frontend:
