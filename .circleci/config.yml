@@ -103,7 +103,7 @@ jobs:
           name: Run Backend test  
           command: |
             cd backend
-            npm installl
+            npm install
             npm run build
 
   scan-frontend:
