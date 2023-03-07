@@ -92,8 +92,8 @@ jobs:
           command: |
             cd frontend
             npm install
-            npm run build
-
+            npm run build 
+ 
   test-backend:
     <<: *node_image
     steps:
@@ -101,7 +101,7 @@ jobs:
       - restore_cache:
           keys: [backend-build]
       - run?:
-          name: Run Backend test
+          name: Run Backend test 
           command: |
             cd backend
             npm install
