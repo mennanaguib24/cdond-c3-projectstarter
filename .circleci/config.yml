@@ -341,8 +341,9 @@ jobs:
             echo $URL
             if curl ${URL} | grep "Welcome"; then return 1; else return 1; fi
             
-      
-      
+    
+      - destroy-environment
+      - revert-migrations
 
   cloudfront-update:
     <<: *aws_image
