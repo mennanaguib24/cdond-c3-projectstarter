@@ -102,7 +102,7 @@ jobs:
           name: Run Backend test  
           command: |
             cd backend
-            npm install  
+            npm install
             npm run build
 
   scan-frontend:
@@ -140,7 +140,7 @@ jobs:
   deploy-infrastructure:
     <<: *aws_image
     steps:
-      - checkout
+      - checkout 
       - run:
           name: Ensure back-end infrastructure exists
           command: |
