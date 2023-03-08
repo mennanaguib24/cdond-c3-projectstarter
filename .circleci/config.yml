@@ -342,7 +342,7 @@ jobs:
             if curl ${URL} | grep "Welcome"; then return 0; else return 1; fi
             
     
-      - destroy-environment
+      - destroy-environment 
       - revert-migrations
 
   cloudfront-update:
